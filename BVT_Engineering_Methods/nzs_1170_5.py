@@ -391,7 +391,7 @@ h_n =  50#@param {type:"number"}
 def floor_height__coefficient(h_i,h_n):
   
   if h_i < 12 :
-      C_Hi = (h_i/6)
+      C_Hi = (1+h_i/6)
   if h_i < 0.2*h_n:
     if (1+h_i/6) > (1+10*(h_i/h_n)):
       C_Hi = (1+10*(h_i/h_n))
